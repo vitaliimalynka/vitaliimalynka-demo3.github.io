@@ -1,0 +1,39 @@
+&.bordered-bottom{
+    border-bottom: 2px $mutedColor solid;
+    display: flex;
+    flex-direction: row;
+}//&.bordered-bottom end
+.servicesInfo{
+    width:50%;
+    padding-right: 110px;
+    p{
+        padding-top: 50px;
+    } //p end
+    .btn-empty{
+        @include buttonStyles($secondaryColor, 2px $infoColor solid, $infoColor);
+        margin-top: 55px;
+    }// .btn-empty end
+}
+.services{
+    display: flex;
+    flex-flow: row wrap;
+    width: 50%;
+    .services-card{
+        width:50%;
+        padding: 0/15px;
+        &:nth-child(1), &:nth-child(2){
+            padding-bottom: 50px;
+        }
+        // &:nth-child(1), &:nth-child(2) end
+        h3{
+            @include fontStyles($primaryColor,24px,700,none,none);
+            letter-spacing: 0.42px;
+        }
+        // h3 end
+        p{
+            white-space:normal;
+        }
+        // p end
+    }
+    // .services-card end
+}// .services end

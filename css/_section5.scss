@@ -1,0 +1,77 @@
+&.contacts{
+    position: relative;
+    .container{
+    > p{
+        padding: 45px 0 55px;
+        width: 725px;
+    }// p end
+    >hr.smallHR{
+        margin-left: 0;
+    }//>hr.smallHR end
+    .div-contacts{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        margin: 75px 0 0 0;
+        form{
+            width: 740px;
+            margin-right: 110px;
+            input{
+                width: 340px;
+                height: 70px;
+                background-color: #e5e5e5;
+                border: none;
+                border-radius: 10px;
+                padding-left: 50px;
+                @include fontStyles($primaryColor, 18px, 400, none, none, 34px);
+                letter-spacing: 1.05px;
+                &:first-child{
+                    margin-right: 55px;
+                }//&:first-child end
+            }//input end
+            textarea{
+                width: 735px;
+                height: 250px;
+                background-color: #e5e5e5;
+                margin: 50px 0;
+                background-color: #e5e5e5;
+                border: none;
+                border-radius: 10px;
+                @include fontStyles($primaryColor, 18px, 400, none, none, 34px);
+                letter-spacing: 1.05px;
+                padding: 50px 35px;
+            }//textarea end
+            button{
+                @include buttonStyles($infoColor, none);
+                width: 735px;
+                height: 75px;
+                @include fontStyles($secondaryColor, 18px, bold, none, uppercase, 34px);
+                letter-spacing: 1.05px;
+            }//button end
+        }//form end
+        .contact-info{
+            position: absolute;
+            right: 0;
+            width: 500px;
+            height: 500px;
+            background-color: $primaryColor;
+            padding: 127px 0 0 80px;
+            h3{
+                @include fontStyles($secondaryColor, 18px, bold, none, uppercase, 34px);
+                letter-spacing: 1.05px;
+                margin-bottom: 35px;
+            }// h3 end
+            p{
+                color: $secondaryColor;
+                width: 290px;
+                &.email{
+                    margin: 25px 0 30px; 
+                }//&.email end
+            }// p end
+            a{
+                @include fontStyles($secondaryColor, 16px, 400, none, none, 28px);
+            }
+        }//.contact-info end
+    }// .div-contacts end
+    }//.container end
+}//&.contacts end

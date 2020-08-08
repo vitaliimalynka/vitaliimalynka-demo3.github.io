@@ -1,0 +1,20 @@
+section{
+    padding: 110px 0px;
+    h2{
+        @include fontStyles($primaryColor, 42px, bold, none, uppercase,55px);
+        letter-spacing: 0.42px;
+        margin: 0;
+    }//h2 end
+    .smallHR{
+        width: 130px;
+        height: 2px;
+        background-color: $infoColor;
+        border:none;
+        box-shadow: 0 1px 2px $infoColor;
+    }//.smallHR end
+    @import "section1",
+            "section2",
+            "section3",
+            "section4",
+            "section5";
+}//section end

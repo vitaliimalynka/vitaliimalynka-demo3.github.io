@@ -1,0 +1,30 @@
+&.fullFill{
+    background-color: $imgElemBGColor;
+    text-align: center;
+    padding: 140px 0;
+    h2{
+        @include fontStyles($secondaryColor,42px,bold,none,none);
+                letter-spacing: 1.05px;
+    }
+    p{
+        color: $secondaryColor;
+        padding: 0 0 65px 0;
+    }
+    input{
+        height: 80px;
+        width:520px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 45px;
+        margin-right: 20px;
+        @include fontStyles($primaryColor,16px,400,none,none);
+        letter-spacing: 1.05px;
+    }
+    button{
+        @include buttonStyles($infoColor, none);
+        @include fontStyles($secondaryColor,18px,bold,none,uppercase, 34px);
+        letter-spacing: 1.05px;
+        width: 216px;
+        height: 80px;
+    }
+}

@@ -1,0 +1,19 @@
+@mixin buttonStyles($bgColor, $border, $textColor: $secondaryColor) {
+    background: $bgColor;
+    border: $border;
+    color: $textColor;
+    width: 225px;
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 5px;
+    font-size: $largeTextSize;
+}
+@mixin fontStyles ($textColor: #000, $fontSize: 16px, $fontWeight: 400, $textDecor: none, $textTrans: none, $lineHeight: 28px){
+    color: $textColor;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+    text-decoration: $textDecor;
+    text-transform: $textTrans;
+    line-height: $lineHeight;
+
+}

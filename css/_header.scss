@@ -1,0 +1,53 @@
+header{
+    background-color: $headerBGColor;
+    padding-top: 30px;
+    padding-bottom: 110px;
+    nav{
+        display:flex;
+        justify-content: center;
+        background-color: $secondaryBGColor;
+        margin-bottom: 100px;
+        a{
+            padding: 40px 25px 30px;
+            @include fontStyles($mutedColor, $secondaryTextSize,bold,none,uppercase,normal);
+            &:hover{
+                background-color: $infoColor;
+            }
+            // &:hover end
+        }   
+        // a end
+    }
+    // nav end
+    .main-info{
+        display:flex;
+        .description{
+            width:50%;
+            margin-right: 100px;
+            h1{
+                @include fontStyles($primaryColor, $largestTextSize,800,none,uppercase,72px);
+                margin:0 0 36px 0;
+                letter-spacing: 6px;
+            }
+            // h1
+            p{
+                padding-right: 20px;
+            }
+            .btn-filled{
+                @include buttonStyles($infoColor,none,$secondaryColor);
+                margin-top: 55px;
+            }
+        }
+        // .description
+        .video{
+            width: 50%;
+            background: #c4c0b1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 0 68px #c8c4c4,
+        }
+        // .video
+    }
+}
+
+
